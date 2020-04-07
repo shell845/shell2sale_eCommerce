@@ -1,0 +1,11 @@
+Hey,
+
+Welcome to Shell2sale!
+
+Please active your account ({{ email }}) by clicking below link:
+{{ path }}
+
+See you soon.
+
+Cheers,
+Shell

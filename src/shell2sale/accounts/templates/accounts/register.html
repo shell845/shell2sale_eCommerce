@@ -1,0 +1,9 @@
+{%  extends "base.html" %}
+
+{%  block content %}
+<form method='POST'> {% csrf_token %}
+	{{ form.as_p }}
+<button type='submit' class='btn btn-success'>Submit</button>
+<hr>
+<p class="text-secondary small">An email will be sent to your mail box for account validation after your registration. The email may be in spam box.</p>
+{%  endblock %}

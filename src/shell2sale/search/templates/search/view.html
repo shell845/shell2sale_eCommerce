@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+	<div class='row mb-3'>
+	{% if request.GET.q %}
+		<div class='col-12 text-center'>
+			Results for <b>{{ query }}</b>
+			<hr/>
+		</div>
+	{% else %}
+		<div class='col-12 col-md-6 mx-auto py-5 text-center'>
+			{% include 'search/snippets/search-form.html' %}
+		</div>
+		<div class='col-12'>
+	    	<hr/>
+		</div>		
+	{% endif %}
+	 </div>
+
+	<div class='row'>
+	{% for obj in object_list %}
+	    <div class='col'>
+		{% include 'products/snippets/card.html' with instance=obj %}
+		</div>
+	{% endfor %}
+    </div>
+{% endblock %}

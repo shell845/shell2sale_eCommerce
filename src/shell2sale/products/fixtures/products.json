@@ -1,0 +1,58 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "title": "Lipstick",
+        "slug": "lipstick",
+        "description": "MAC102",
+        "price": "129.99",
+        "image": "products/mac.jpeg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2019-08-18T15:34:16.193Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "title": "Perfume",
+        "slug": "perfume",
+        "description": "The only Miu Miu perfume with an opaque bottle, this signature scent's packaging showcases its modern uniqueness. This fragrance's top note is lily-of-the-valley, a delightfully floral scent with a grounding base of almost grassy notes.",
+        "price": "888.88",
+        "image": "products/miumiu_a-test_FOaNrzr.jpeg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2019-08-18T15:34:16.193Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "title": "Night Cream",
+        "slug": "night_cream",
+        "description": "This luxuriously rich cream deeply soothes, moisturizes and helps heal away dryness. Skin looks naturally vibrant, restored to its healthiest center. Miracle Broth\u2122 \u2013 the legendary healing elixir that flows through all of La Mer \u2013 infuses skin with sea-sourced renewing energies. Ideal for drier skin.",
+        "price": "1200.00",
+        "image": "products/2416935073/night_cream2416935073.jpeg",
+        "featured": true,
+        "active": true,
+        "timestamp": "2019-08-18T15:34:16.193Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "title": "Day Cream",
+        "slug": "day-cream",
+        "description": "Use in the morning",
+        "price": "666.00",
+        "image": "products/1047096877/night_cream1047096877.jpeg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2019-08-18T15:34:16.193Z"
+    }
+}
+]

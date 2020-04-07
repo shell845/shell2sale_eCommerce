@@ -1,0 +1,7 @@
+bin/
+fasttracktojquery/
+include/
+lib/
+src/shell2sale/shell2sale/settings/*.*
+*.sqlite3
+src/static_cdn/media_root/products/

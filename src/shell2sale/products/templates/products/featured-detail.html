@@ -1,0 +1,7 @@
+<h2>Featured Detail</h2>
+<hr>
+{{ object.title }} <br/>
+{{ object.description }} <br/>
+{% if object.image %}
+    <img src='{{ object.image.url }}' class='img-fluid' />
+{% endif %}

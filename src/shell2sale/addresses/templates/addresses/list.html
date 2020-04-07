@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class='row'>
+<div class='col-12'>
+    <h2>Address{% if object_list.count > 1%}es{% endif %}</h2>
+    <hr/>
+</div>
+</div>
+
+<div class='row'>
+        {% for obj in object_list %}
+            <div class='col-12 col-md-3 my-3'>
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">{{ obj.get_address_type_display }}</h4> 
+                     <!-- <small>{{ obj.get_address_type_display }}</small><br/> -->
+                     <br/>
+                     <!-- <h5>Address</h5> -->
+                     {{ obj.get_address|linebreaks }}
+                    
+                    <!-- <a href='{{ obj.get_absolute_url }}' class='btn btn-info'>Edit</a> -->
+                  </div>
+                  <a href='{{ obj.get_absolute_url }}' class='btn btn-info'>Edit</a>
+                </div>
+            </div>
+        {% empty %}
+         <p class='lead text-center'>No address yet</p>
+        {% endfor %}
+</div>
+
+<div class='row'>
+<div class='col-12'>
+    <hr/>
+    <p><a href='{% url "address-create" %}'>Create New Address</a></p>
+</div>
+</div>
+
+{% endblock %}

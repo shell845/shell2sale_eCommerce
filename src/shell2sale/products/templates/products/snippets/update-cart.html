@@ -1,0 +1,18 @@
+<form class='form-product-ajax' method='POST' action='{% url "cart:update" %}' data-endpoint='{% url "cart:update" %}' class="form">
+	{% csrf_token %}
+
+	<input type='hidden' name='product_id' value='{{ product.id }}' />
+
+    <span class='submit-span'>
+		{% if product in cart.products.all %}
+			<button type='submit' class='btn btn-warning'>Remove from cart</button>
+		{% else %}
+          {% if product.available and product.stock > 0 %}
+                  <button type='submit' class='btn btn-success'>Add to cart</button>
+          {% else %}
+                  <button type="button" class="btn btn-secondary">Out of Stock</button>
+          {% endif %}
+		{% endif %}
+	</span>
+
+</form>
